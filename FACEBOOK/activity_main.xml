@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <!-- Cover Photo -->
+    <ImageView
+        android:id="@+id/cover_photo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/your_cover_photo"  <!-- Replace with your cover photo -->
+    android:scaleType="centerCrop"
+    android:contentDescription="Cover Photo" />
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/your_profile_photo"  <!-- Replace with your profile photo -->
+    android:contentDescription="Profile Picture"
+    android:background="@android:color/white"
+    android:padding="4dp"
+    android:scaleType="centerCrop"
+    android:elevation="4dp" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_below="@id/profile_picture"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Bio -->
+    <TextView
+        android:id="@+id/user_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a user bio."
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_below="@id/user_name"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/edit_profile_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:layout_below="@id/user_bio"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4267B2"
+        android:textColor="#ffffff"/>
+
+    <!-- Posts Section -->
+    <TextView
+        android:id="@+id/posts_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posts"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#4267B2"
+        android:layout_below="@id/edit_profile_button"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Sample Post -->
+    <TextView
+        android:id="@+id/sample_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a sample post!"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_below="@id/posts_section"
+        android:padding="16dp"
+        android:background="#f0f0f0"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
